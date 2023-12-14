@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(102deg, rgba(64,52,188,0.3), rgba(226,84,27,0.5));
+}
+
+#formulaires {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+}
+
+#caseModif,
+#caseAddBook,
+#caseAddUser,
+#caseSuppr,
+#caseBorrow,
+#caseReturn {
+    border: 4mm ridge hsla(0, 0%, 0%, 0.3) !important;
+    background-color: #ceb6f549;
+
+    text-align: center !important;
+}
+
+#table_livre tbody tr td{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#table_livre thead tr th,
+#table_livre tfoot tr th{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dataTables_wrapper {
+    color: black;
+}
+
+.btn-primary {
+    background-color: #5f487a;
+    border-color: #5f487a;
+}
+
+.pagination li a{
+    color: #5f487a;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pagination .active a.page-link {
+    background: #5f487a;
+}
+
+#table_livre_paginate,
+#table_livre_filter {
+    margin-right: 20px;
+}
+
+#table-container {
+    margin-top: 150px;
+}
+
+.custom-table {
+    padding-right: 20px;
+    /* Ajustez cette valeur selon vos besoins */
+    color: firebrick;
+}
+
+.custom-img {
+    max-width: 25%; 
+    height: auto; 
+}
+
+.pagination {
+    --bs-pagination-focus-box-shadow: black;
+    --bs-pagination-active-border-color: #5f487a;
+    --bs-pagination-hover-color: #5f487a;
+    --bs-pagination-disabled-bg: rgba(255, 255, 255, 0.8);
+}
