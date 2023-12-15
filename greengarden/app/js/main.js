@@ -179,7 +179,11 @@ $(document).ready(function () {
         "columnDefs": [
             { "targets": [3, 4, 5, 6, 7, 8], "visible": false } 
         ],
+        
     });
+
+    // Cache l'erreur lors de la génération du tableau A MODIFIER
+    $.fn.dataTable.ext.errMode = 'none';
 
     // Tableaux générés avec la sélection catégorie ou produit
     $('input[name="selectedTableDate"]').on('change', function () {
